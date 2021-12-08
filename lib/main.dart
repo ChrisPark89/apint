@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/ConversationPageList.dart';
+import 'config/Palette.dart';
+import 'pages/ConversationPageSlide.dart';
 
 void main() => runApp(Apint());
 
@@ -10,9 +11,9 @@ class Apint extends StatelessWidget {
     return MaterialApp(
       title: 'Messio',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Palette.primaryColor,
       ),
-      home: ConversationPageList(),
+      home: ConversationPageSlide(),
     );
   }
 }
